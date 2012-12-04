@@ -18,7 +18,7 @@ def main(argv):
         data_dir = argv[1]
     else:
         print_usage(basename(argv[0]))
-        exit()
+        exit(1)
 
     train_csv = join(data_dir, 'train.csv')
     train_labels_npy = join(data_dir, 'train_labels.npy')
