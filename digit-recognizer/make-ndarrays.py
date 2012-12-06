@@ -24,7 +24,7 @@ def main(argv):
     train_labels_npy = join(data_dir, 'train_labels.npy')
     train_data_npy = join(data_dir, 'train_data.npy')
     test_csv = join(data_dir, 'test.csv')
-    test_npy = join(data_dir, 'test.npy')
+    test_npy = join(data_dir, 'test_data.npy')
 
     train_data = loadtxt(train_csv, dtype='uint8', delimiter=',', skiprows=1)
     save(train_labels_npy, train_data[:,0])
