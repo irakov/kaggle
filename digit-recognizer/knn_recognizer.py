@@ -10,7 +10,7 @@ class Recognizer:
         self.__classifier.fit(train_data, train_labels)
 
     def recognize(self, digit):
-        return self.__classifier.predict(digit)[0]
+        return int(self.__classifier.predict(digit)[0])
 
 def __main():
     def print_usage(script_name):
